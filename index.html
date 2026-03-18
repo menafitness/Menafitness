@@ -4,663 +4,691 @@
 
 <head>
 
-<meta charset="UTF-8">
+  <meta charset="UTF-8">
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Mena Fitness | Mobile Personal Training & Online Coaching</title>
+  <title>Mena Fitness | Mobile Personal Training & Online Coaching</title>
 
 
 
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800;900&display=swap" rel="stylesheet">
 
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 
-<script src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 
 
 
-<style>
+  <style>
 
-:root{
+    :root{
 
-  --red:#8B0000;
+      --red:#8B0000;
 
-  --red-dark:#5a0000;
+      --red-dark:#5a0000;
 
-  --gold:#D4AF37;
+      --gold:#D4AF37;
 
-  --gold-soft:#f0d57a;
+      --gold-soft:#f0d57a;
 
-  --black:#111;
+      --black:#111;
 
-  --white:#fff;
+      --white:#fff;
 
-  --muted:#cfcfcf;
+      --muted:#cfcfcf;
 
-}
+      --card:#1a1a1a;
 
+    }
 
 
-*{
 
-  margin:0;
+    *{
 
-  padding:0;
+      margin:0;
 
-  box-sizing:border-box;
+      padding:0;
 
-  font-family:'Montserrat',sans-serif;
+      box-sizing:border-box;
 
-}
+      font-family:'Montserrat',sans-serif;
 
+    }
 
 
-html{
 
-  scroll-behavior:smooth;
+    html{
 
-}
+      scroll-behavior:smooth;
 
+    }
 
 
-body{
 
-  background:var(--black);
+    body{
 
-  color:var(--white);
+      background:var(--black);
 
-  line-height:1.6;
+      color:var(--white);
 
-}
+      line-height:1.6;
 
+    }
 
 
-/* HEADER */
 
+    a{
 
+      color:inherit;
 
-header{
+    }
 
-  background:linear-gradient(135deg,var(--red),var(--red-dark));
 
-  padding:16px 28px;
 
-  display:flex;
+    /* HEADER */
 
-  justify-content:space-between;
 
-  align-items:center;
 
-  position:sticky;
+    header{
 
-  top:0;
+      background:linear-gradient(135deg,var(--red),var(--red-dark));
 
-  z-index:999;
+      padding:16px 28px;
 
-  box-shadow:0 10px 30px rgba(0,0,0,.25);
+      display:flex;
 
-}
+      justify-content:space-between;
 
+      align-items:center;
 
+      position:sticky;
 
-.brand{
+      top:0;
 
-  display:flex;
+      z-index:999;
 
-  align-items:center;
+      box-shadow:0 10px 30px rgba(0,0,0,.25);
 
-  gap:14px;
+      transition:all .3s ease;
 
-  text-decoration:none;
+    }
 
-  min-width:fit-content;
 
-}
 
+    header.scrolled{
 
+      background:rgba(139,0,0,0.95);
 
-.brand img{
+      backdrop-filter:blur(10px);
 
-  height:78px;
+      box-shadow:0 10px 30px rgba(0,0,0,.35);
 
-  filter:drop-shadow(0 0 8px rgba(0,0,0,0.45));
+    }
 
-  transition:.3s ease;
 
-}
 
+    .brand{
 
+      display:flex;
 
-.brand:hover img{
+      align-items:center;
 
-  transform:scale(1.04);
+      gap:14px;
 
-  filter:drop-shadow(0 0 12px rgba(212,175,55,.35));
+      text-decoration:none;
 
-}
+      min-width:fit-content;
 
+    }
 
 
-.brand-text-wrap{
 
-  display:flex;
+    .brand img{
 
-  flex-direction:column;
+      height:78px;
 
-  line-height:1;
+      filter:drop-shadow(0 0 8px rgba(0,0,0,0.45));
 
-}
+      transition:.3s ease;
 
+    }
 
 
-.brand-text{
 
-  font-size:1.75rem;
+    .brand:hover img{
 
-  font-weight:900;
+      transform:scale(1.04);
 
-  letter-spacing:3px;
+      filter:drop-shadow(0 0 12px rgba(212,175,55,.35));
 
-  color:var(--gold);
+    }
 
-  text-transform:uppercase;
 
-  text-shadow:
 
-    0 0 8px rgba(212,175,55,.35),
+    .brand-text-wrap{
 
-    0 0 20px rgba(212,175,55,.18);
+      display:flex;
 
-}
+      flex-direction:column;
 
+      line-height:1;
 
+    }
 
-.brand-sub{
 
-  font-size:.72rem;
 
-  font-weight:600;
+    .brand-text{
 
-  letter-spacing:2px;
+      font-size:1.75rem;
 
-  color:rgba(255,255,255,.8);
+      font-weight:900;
 
-  text-transform:uppercase;
+      letter-spacing:3px;
 
-  margin-top:6px;
+      color:var(--gold);
 
-}
+      text-transform:uppercase;
 
+      text-shadow:
 
+        0 0 8px rgba(212,175,55,.35),
 
-nav{
+        0 0 20px rgba(212,175,55,.18);
 
-  display:flex;
+    }
 
-  gap:16px;
 
-  align-items:center;
 
-  flex-wrap:wrap;
+    .brand-sub{
 
-  justify-content:flex-end;
+      font-size:.72rem;
 
-}
+      font-weight:600;
 
+      letter-spacing:2px;
 
+      color:rgba(255,255,255,.82);
 
-nav a{
+      text-transform:uppercase;
 
-  color:white;
+      margin-top:6px;
 
-  text-decoration:none;
+    }
 
-  font-weight:700;
 
-  transition:.25s ease;
 
-}
+    nav{
 
+      display:flex;
 
+      gap:16px;
 
-nav a:hover{
+      align-items:center;
 
-  color:var(--gold-soft);
+      flex-wrap:wrap;
 
-}
+      justify-content:flex-end;
 
+    }
 
 
-.btn{
 
-  background:var(--gold);
+    nav a{
 
-  color:#111;
+      color:white;
 
-  padding:10px 18px;
+      text-decoration:none;
 
-  border-radius:999px;
+      font-weight:700;
 
-  font-weight:800;
+      transition:.25s ease;
 
-  border:none;
+    }
 
-  cursor:pointer;
 
-  transition:.25s ease;
 
-}
+    nav a:hover{
 
+      color:var(--gold-soft);
 
+    }
 
-.btn.outline{
 
-  background:transparent;
 
-  border:2px solid var(--gold);
+    .btn{
 
-  color:white;
+      background:var(--gold);
 
-}
+      color:#111;
 
+      padding:10px 18px;
 
+      border-radius:999px;
 
-.btn:hover{
+      font-weight:800;
 
-  transform:translateY(-1px);
+      border:none;
 
-  box-shadow:0 8px 18px rgba(0,0,0,.2);
+      cursor:pointer;
 
-}
+      transition:.25s ease;
 
+    }
 
 
-/* HERO */
 
+    .btn.outline{
 
+      background:transparent;
 
-.hero{
+      border:2px solid var(--gold);
 
-  min-height:75vh;
+      color:white;
 
-  display:flex;
+    }
 
-  align-items:center;
 
-  justify-content:center;
 
-  text-align:center;
+    .btn:hover{
 
-  padding:80px 20px;
+      transform:translateY(-1px);
 
-  position:relative;
+      box-shadow:0 8px 18px rgba(0,0,0,.2);
 
-}
+    }
 
 
 
-.hero::before{
+    /* HERO */
 
-  content:"";
 
-  position:absolute;
 
-  inset:0;
+    .hero{
 
-  background:
+      min-height:75vh;
 
-    linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.85)),
+      display:flex;
 
-    url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=2000&q=80');
+      align-items:center;
 
-  background-size:cover;
+      justify-content:center;
 
-  background-position:center;
+      text-align:center;
 
-}
+      padding:80px 20px;
 
+      position:relative;
 
+    }
 
-.hero-inner{
 
-  position:relative;
 
-  max-width:900px;
+    .hero::before{
 
-}
+      content:"";
 
+      position:absolute;
 
+      inset:0;
 
-h1{
+      background:
 
-  font-size:3.3rem;
+        linear-gradient(rgba(0,0,0,.48),rgba(0,0,0,.86)),
 
-  font-weight:900;
+        url('https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=2000&q=80');
 
-  margin-bottom:12px;
+      background-size:cover;
 
-  text-shadow:0 8px 24px rgba(0,0,0,.35);
+      background-position:center;
 
-}
+    }
 
 
 
-.sub{
+    .hero-inner{
 
-  color:var(--muted);
+      position:relative;
 
-  margin-bottom:24px;
+      max-width:900px;
 
-  font-size:1.08rem;
+    }
 
-}
 
 
+    h1{
 
-.hero-actions{
+      font-size:3.3rem;
 
-  display:flex;
+      font-weight:900;
 
-  gap:12px;
+      margin-bottom:12px;
 
-  justify-content:center;
+      text-shadow:0 8px 24px rgba(0,0,0,.35);
 
-  flex-wrap:wrap;
+    }
 
-}
 
 
+    .sub{
 
-/* SECTIONS */
+      color:var(--muted);
 
+      margin-bottom:24px;
 
+      font-size:1.08rem;
 
-section{
+    }
 
-  padding:64px 20px;
 
-}
 
+    .hero-actions{
 
+      display:flex;
 
-.container{
+      gap:12px;
 
-  max-width:1100px;
+      justify-content:center;
 
-  margin:auto;
+      flex-wrap:wrap;
 
-}
+    }
 
 
 
-.section-title{
+    /* SECTIONS */
 
-  text-align:center;
 
-  margin-bottom:30px;
 
-}
+    section{
 
+      padding:64px 20px;
 
+    }
 
-.section-title h2{
 
-  color:var(--gold);
 
-  margin-bottom:8px;
+    .container{
 
-  font-size:2rem;
+      max-width:1100px;
 
-}
+      margin:auto;
 
+    }
 
 
-.section-title p{
 
-  color:var(--muted);
+    .section-title{
 
-}
+      text-align:center;
 
+      margin-bottom:30px;
 
+    }
 
-.grid{
 
-  display:grid;
 
-  grid-template-columns:repeat(3,1fr);
+    .section-title h2{
 
-  gap:18px;
+      color:var(--gold);
 
-}
+      margin-bottom:8px;
 
+      font-size:2rem;
 
+      text-shadow:0 0 16px rgba(212,175,55,.12);
 
-.card{
+    }
 
-  background:#1a1a1a;
 
-  padding:24px;
 
-  border-radius:16px;
+    .section-title p{
 
-  border:1px solid rgba(255,255,255,.08);
+      color:var(--muted);
 
-  transition:.3s ease;
+    }
 
-}
 
 
+    .grid{
 
-.card:hover{
+      display:grid;
 
-  transform:translateY(-6px);
+      grid-template-columns:repeat(3,1fr);
 
-  border-color:rgba(212,175,55,.45);
+      gap:18px;
 
-  box-shadow:0 16px 30px rgba(0,0,0,.28);
+    }
 
-}
 
 
+    .card{
 
-.card h3{
+      background:rgba(26,26,26,.88);
 
-  color:var(--gold);
+      padding:24px;
 
-  margin-bottom:8px;
+      border-radius:16px;
 
-  font-size:1.2rem;
+      border:1px solid rgba(255,255,255,.08);
 
-}
+      transition:.3s ease;
 
+      backdrop-filter:blur(2px);
 
+    }
 
-.card p{
 
-  color:var(--muted);
 
-}
+    .card:hover{
 
+      transform:translateY(-6px);
 
+      border-color:rgba(212,175,55,.45);
 
-.alt-section{
+      box-shadow:0 16px 30px rgba(0,0,0,.28);
 
-  background:linear-gradient(135deg,rgba(255,255,255,.02),rgba(212,175,55,.04));
+    }
 
-}
 
 
+    .card h3{
 
-/* CTA */
+      color:var(--gold);
 
+      margin-bottom:8px;
 
+      font-size:1.2rem;
 
-.cta{
+    }
 
-  text-align:center;
 
-  background:linear-gradient(135deg,rgba(139,0,0,.3),rgba(212,175,55,.1));
 
-}
+    .card p{
 
+      color:var(--muted);
 
+    }
 
-footer{
 
-  text-align:center;
 
-  padding:28px;
+    .alt-section{
 
-  color:#aaa;
+      background:linear-gradient(135deg,rgba(255,255,255,.02),rgba(212,175,55,.04));
 
-  border-top:1px solid rgba(255,255,255,.06);
+    }
 
-}
 
 
+    /* CTA */
 
-/* MOBILE */
 
 
+    .cta{
 
-@media(max-width:980px){
+      text-align:center;
 
-  header{
+      background:linear-gradient(135deg,rgba(139,0,0,.35),rgba(212,175,55,.1));
 
-    flex-direction:column;
+    }
 
-    gap:16px;
 
-    padding:18px 20px;
 
-  }
+    footer{
 
+      text-align:center;
 
+      padding:28px;
 
-  .brand{
+      color:#aaa;
 
-    justify-content:center;
+      border-top:1px solid rgba(255,255,255,.06);
 
-    text-align:center;
+    }
 
-  }
 
 
+    /* MOBILE */
 
-  nav{
 
-    justify-content:center;
 
-  }
+    @media(max-width:980px){
 
+      header{
 
+        flex-direction:column;
 
-  .grid{
+        gap:16px;
 
-    grid-template-columns:1fr;
+        padding:18px 20px;
 
-  }
+      }
 
 
 
-  h1{
+      .brand{
 
-    font-size:2.35rem;
+        justify-content:center;
 
-  }
+        text-align:center;
 
+      }
 
 
-  .brand img{
 
-    height:68px;
+      nav{
 
-  }
+        justify-content:center;
 
+      }
 
 
-  .brand-text{
 
-    font-size:1.35rem;
+      .grid{
 
-    letter-spacing:2px;
+        grid-template-columns:1fr;
 
-  }
+      }
 
 
 
-  .brand-sub{
+      h1{
 
-    font-size:.62rem;
+        font-size:2.35rem;
 
-    letter-spacing:1.5px;
+      }
 
-  }
 
-}
 
+      .brand img{
 
+        height:68px;
 
-@media(max-width:560px){
+      }
 
-  nav{
 
-    gap:12px;
 
-  }
+      .brand-text{
 
+        font-size:1.35rem;
 
+        letter-spacing:2px;
 
-  .btn{
+      }
 
-    padding:10px 16px;
 
-  }
 
+      .brand-sub{
 
+        font-size:.62rem;
 
-  .brand{
+        letter-spacing:1.5px;
 
-    gap:10px;
+      }
 
-  }
+    }
 
 
 
-  .brand img{
+    @media(max-width:560px){
 
-    height:60px;
+      nav{
 
-  }
+        gap:12px;
 
+      }
 
 
-  .brand-text{
 
-    font-size:1.15rem;
+      .btn{
 
-  }
+        padding:10px 16px;
 
+      }
 
 
-  .brand-sub{
 
-    display:none;
+      .brand{
 
-  }
+        gap:10px;
 
+      }
 
 
-  .sub{
 
-    font-size:.98rem;
+      .brand img{
 
-  }
+        height:60px;
 
-}
+      }
 
-</style>
+
+
+      .brand-text{
+
+        font-size:1.15rem;
+
+      }
+
+
+
+      .brand-sub{
+
+        display:none;
+
+      }
+
+
+
+      .sub{
+
+        font-size:.98rem;
+
+      }
+
+    }
+
+  </style>
 
 </head>
 
@@ -670,298 +698,413 @@ footer{
 
 
 
-<header>
+  <header>
 
-  <a class="brand" href="#top">
+    <a class="brand" href="#top">
 
-    <img src="logo.png.png" alt="Mena Fitness Logo">
+      <img src="logo.png.png" alt="Mena Fitness Logo">
 
+      <div class="brand-text-wrap">
 
+        <span class="brand-text">MENA FITNESS</span>
 
-    <div class="brand-text-wrap">
-
-      <span class="brand-text">MENA FITNESS</span>
-
-      <span class="brand-sub">Mobile Training & Online Coaching</span>
-
-    </div>
-
-  </a>
-
-
-
-  <nav>
-
-    <a href="#how-it-works">How It Works</a>
-
-    <a href="#services">Services</a>
-
-    <a href="#contact">Contact</a>
-
-    <button class="btn outline" onclick="openCalendly()">Free Consultation</button>
-
-    <button class="btn" onclick="openCalendly()">Start Training</button>
-
-  </nav>
-
-</header>
-
-
-
-<main id="top">
-
-
-
-  <section class="hero">
-
-    <div class="hero-inner">
-
-      <h1>Train With Purpose</h1>
-
-
-
-      <div class="sub">
-
-        Mobile Personal Training • Online Coaching • Nutrition Coaching
+        <span class="brand-sub">Mobile Training & Online Coaching</span>
 
       </div>
 
-
-
-      <div class="hero-actions">
-
-        <button class="btn" onclick="openCalendly()">Start Training</button>
-
-        <button class="btn outline" onclick="openCalendly()">Book Consultation</button>
-
-      </div>
-
-    </div>
-
-  </section>
+    </a>
 
 
 
-  <section id="how-it-works" class="alt-section">
+    <nav>
 
-    <div class="container">
+      <a href="#how-it-works">How It Works</a>
 
-      <div class="section-title">
+      <a href="#services">Services</a>
 
-        <h2>How Mena Fitness Works</h2>
+      <a href="#results">Results</a>
 
-        <p>Simple, personalized coaching built around your lifestyle.</p>
+      <a href="#contact">Contact</a>
 
-      </div>
+      <button class="btn outline" onclick="openCalendly()">Free Consultation</button>
+
+      <button class="btn" onclick="openCalendly()">Start Training</button>
+
+    </nav>
+
+  </header>
 
 
 
-      <div class="grid">
+  <main id="top">
 
-        <div class="card">
 
-          <h3>1. Book Your Consultation</h3>
 
-          <p>Start with a free phone or Zoom consultation so we can learn about your goals, schedule, lifestyle, and training needs.</p>
+    <section class="hero">
+
+      <div class="hero-inner">
+
+        <h1>Train With Purpose</h1>
+
+
+
+        <div class="sub">
+
+          Mobile Personal Training • Online Coaching • Nutrition Coaching
 
         </div>
 
 
 
-        <div class="card">
+        <div class="hero-actions">
 
-          <h3>2. Choose Your Coaching Style</h3>
+          <button class="btn" onclick="openCalendly()">Start Training</button>
 
-          <p>We’ll help you decide whether mobile personal training, online coaching, nutrition coaching, or a combination is the best fit for you.</p>
-
-        </div>
-
-
-
-        <div class="card">
-
-          <h3>3. Get Your Personalized Plan</h3>
-
-          <p>Once we understand your goals, we build a customized plan designed to help you get stronger, leaner, healthier, and more consistent.</p>
+          <button class="btn outline" onclick="openCalendly()">Book Consultation</button>
 
         </div>
 
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
 
-  <section id="services">
+    <section id="how-it-works" class="alt-section">
 
-    <div class="container">
+      <div class="container">
 
-      <div class="section-title">
+        <div class="section-title">
 
-        <h2>Mena Fitness Services</h2>
+          <h2>How Mena Fitness Works</h2>
 
-        <p>Flexible coaching designed for real results.</p>
-
-      </div>
-
-
-
-      <div class="grid">
-
-        <div class="card">
-
-          <h3>Mobile Personal Training</h3>
-
-          <p>A trainer comes directly to your home, apartment gym, private gym, or local park with a program personalized to your goals.</p>
+          <p>Simple, personalized coaching built around your lifestyle.</p>
 
         </div>
 
 
 
-        <div class="card">
+        <div class="grid">
 
-          <h3>Online Coaching</h3>
+          <div class="card">
 
-          <p>Custom workouts, accountability, and expert guidance delivered anywhere so you can stay consistent and keep progressing.</p>
+            <h3>1. Book Your Consultation</h3>
 
-        </div>
+            <p>Start with a free phone or Zoom consultation so we can learn about your goals, schedule, lifestyle, and training needs.</p>
 
-
-
-        <div class="card">
-
-          <h3>Nutrition Coaching</h3>
-
-          <p>Personalized nutrition support through Zoom or phone to help improve body composition, energy, performance, and long-term results.</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
+          </div>
 
 
 
-  <section class="alt-section">
+          <div class="card">
 
-    <div class="container">
+            <h3>2. Choose Your Coaching Style</h3>
 
-      <div class="section-title">
+            <p>We’ll help you decide whether mobile personal training, online coaching, nutrition coaching, or a combination is the best fit for you.</p>
 
-        <h2>Where We Train</h2>
-
-        <p>Coaching built for convenience and real life.</p>
-
-      </div>
+          </div>
 
 
 
-      <div class="grid">
+          <div class="card">
 
-        <div class="card">
+            <h3>3. Get Your Personalized Plan</h3>
 
-          <h3>Home Training</h3>
+            <p>Once we understand your goals, we build a customized plan designed to help you get stronger, leaner, healthier, and more consistent.</p>
 
-          <p>Private sessions in your home for convenience, comfort, and focused coaching.</p>
-
-        </div>
-
-
-
-        <div class="card">
-
-          <h3>Apartment & Private Gyms</h3>
-
-          <p>Train in your building gym or a private facility with a structured program and hands-on support.</p>
-
-        </div>
-
-
-
-        <div class="card">
-
-          <h3>Outdoor Training</h3>
-
-          <p>Train at local parks or outdoor spaces for fresh-air workouts, conditioning, and performance-focused sessions.</p>
+          </div>
 
         </div>
 
       </div>
 
-    </div>
-
-  </section>
+    </section>
 
 
 
-  <section class="cta" id="contact">
+    <section id="services">
 
-    <div class="container">
+      <div class="container">
 
-      <div class="section-title">
+        <div class="section-title">
 
-        <h2>Book Your Free Consultation</h2>
+          <h2>Mena Fitness Services</h2>
 
-        <p>Let’s build a plan around your goals.</p>
+          <p>Flexible coaching designed for real results.</p>
+
+        </div>
+
+
+
+        <div class="grid">
+
+          <div class="card">
+
+            <h3>Mobile Personal Training</h3>
+
+            <p>A trainer comes directly to your home, apartment gym, private gym, or local park with a program personalized to your goals.</p>
+
+          </div>
+
+
+
+          <div class="card">
+
+            <h3>Online Coaching</h3>
+
+            <p>Custom workouts, accountability, and expert guidance delivered anywhere so you can stay consistent and keep progressing.</p>
+
+          </div>
+
+
+
+          <div class="card">
+
+            <h3>Nutrition Coaching</h3>
+
+            <p>Personalized nutrition support through Zoom or phone to help improve body composition, energy, performance, and long-term results.</p>
+
+          </div>
+
+        </div>
 
       </div>
 
-
-
-      <button class="btn" onclick="openCalendly()">Book Consultation</button>
-
-    </div>
-
-  </section>
+    </section>
 
 
 
-</main>
+    <section class="alt-section">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Where We Train</h2>
+
+          <p>Coaching built for convenience and real life.</p>
+
+        </div>
 
 
 
-<footer>
+        <div class="grid">
 
-  © <span id="year"></span> Mena Fitness
+          <div class="card">
 
-</footer>
+            <h3>Home Training</h3>
 
+            <p>Private sessions in your home for convenience, comfort, and focused coaching.</p>
 
-
-<script>
-
-const CALENDLY_URL = "https://calendly.com/healthmenafitness/30min";
+          </div>
 
 
 
-function openCalendly(){
+          <div class="card">
 
-  if(!CALENDLY_URL.includes("http")){
+            <h3>Apartment & Private Gyms</h3>
 
-    alert("Add your Calendly link in the code.");
+            <p>Train in your building gym or a private facility with a structured program and hands-on support.</p>
 
-    return;
-
-  }
+          </div>
 
 
 
-  Calendly.initPopupWidget({ url: CALENDLY_URL });
+          <div class="card">
 
-}
+            <h3>Outdoor Training</h3>
+
+            <p>Train at local parks or outdoor spaces for fresh-air workouts, conditioning, and performance-focused sessions.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
 
 
 
-document.getElementById("year").textContent = new Date().getFullYear();
+    <section id="results">
 
-</script>
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Client Results</h2>
+
+          <p>Real people. Real progress. Real confidence.</p>
+
+        </div>
+
+
+
+        <div class="grid">
+
+          <div class="card">
+
+            <h3>Lost 25+ lbs</h3>
+
+            <p>"Training became simple and consistent. Having structure and accountability made the biggest difference."</p>
+
+          </div>
+
+
+
+          <div class="card">
+
+            <h3>Stronger & More Confident</h3>
+
+            <p>"I finally stopped guessing in the gym and started seeing real results with a plan built for me."</p>
+
+          </div>
+
+
+
+          <div class="card">
+
+            <h3>More Energy & Better Habits</h3>
+
+            <p>"The training and nutrition support helped me feel healthier, stronger, and more in control of my routine."</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="alt-section">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Why Mena Fitness</h2>
+
+          <p>Coaching that is personal, convenient, and built for long-term success.</p>
+
+        </div>
+
+
+
+        <div class="grid">
+
+          <div class="card">
+
+            <h3>Convenience</h3>
+
+            <p>We come to you or coach you online, making consistency easier no matter how busy your schedule is.</p>
+
+          </div>
+
+
+
+          <div class="card">
+
+            <h3>Personalized Plans</h3>
+
+            <p>No cookie-cutter workouts. Every program is tailored to your goals, experience level, and lifestyle.</p>
+
+          </div>
+
+
+
+          <div class="card">
+
+            <h3>Accountability</h3>
+
+            <p>We help you stay on track with structure, support, and coaching that keeps you moving forward.</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+
+    <section class="cta" id="contact">
+
+      <div class="container">
+
+        <div class="section-title">
+
+          <h2>Book Your Free Consultation</h2>
+
+          <p>Let’s build a plan around your goals.</p>
+
+        </div>
+
+
+
+        <button class="btn" onclick="openCalendly()">Book Consultation</button>
+
+      </div>
+
+    </section>
+
+
+
+  </main>
+
+
+
+  <footer>
+
+    © <span id="year"></span> Mena Fitness
+
+  </footer>
+
+
+
+  <script>
+
+    const CALENDLY_URL = "https://calendly.com/healthmenafitness/30min";
+
+
+
+    function openCalendly(){
+
+      if(!CALENDLY_URL.includes("http")){
+
+        alert("Add your Calendly link in the code.");
+
+        return;
+
+      }
+
+
+
+      Calendly.initPopupWidget({ url: CALENDLY_URL });
+
+    }
+
+
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+
+
+    window.addEventListener("scroll", function(){
+
+      const header = document.querySelector("header");
+
+      header.classList.toggle("scrolled", window.scrollY > 50);
+
+    });
+
+  </script>
 
 
 
 </body>
 
 </html>
+
